@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online tool to resize your images instantly">
+    <title>Image Resizer - Free Online Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ImageResizer</div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#tool">Tool</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tool" class="tool-section">
+            <div class="container">
+                <div class="tool-container">
+                    <div class="tool-header">
+                        <h1 class="gradient-text">Image Resizer</h1>
+                        <p>Resize your images instantly with our free online tool</p>
+                    </div>
+                    
+                    <div class="tool-grid">
+                        <div class="upload-area">
+                            <div id="dropZone" class="drop-zone">
+                                <div class="drop-zone-content">
+                                    <div class="upload-icon">📸</div>
+                                    <p>Drop your image here or click to upload</p>
+                                    <span class="drop-zone-hint">Supports: JPG, PNG, WebP</span>
+                                </div>
+                            </div>
+                            <input type="file" id="fileInput" class="hidden" accept="image/*">
+                        </div>
+
+                        <div class="controls-area">
+                            <div class="preview-container">
+                                <div class="original-preview">
+                                    <h3>Original Image</h3>
+                                    <div class="image-wrapper">
+                                        <img id="originalImage" class="image-preview hidden" alt="Original Image">
+                                    </div>
+                                    <div class="image-info"></div>
+                                </div>
+                                
+                                <div class="resize-controls">
+                                    <div class="dimension-inputs">
+                                        <div class="input-group">
+                                            <label for="width">Width (px)</label>
+                                            <input type="number" id="width" placeholder="Width" min="1">
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="height">Height (px)</label>
+                                            <input type="number" id="height" placeholder="Height" min="1">
+                                        </div>
+                                    </div>
+                                    <div class="aspect-ratio">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="maintainAspectRatio" checked>
+                                            Maintain aspect ratio
+                                        </label>
+                                    </div>
+                                    <button id="resizeBtn" class="cta">Resize Image</button>
+                                </div>
+                                
+                                <div class="resized-preview">
+                                    <h3>Resized Image</h3>
+                                    <div class="image-wrapper">
+                                        <img id="resizedImage" class="image-preview hidden" alt="Resized Image">
+                                    </div>
+                                    <div class="download-area">
+                                        <a id="downloadBtn" class="cta download-btn hidden">Download Image</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="gradient-text">Why Choose Our Tool?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Resizing</h3>
+                        <p>Resize your images in seconds with our fast processing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% Secure</h3>
+                        <p>Your images are processed locally, never uploaded to any server</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>High Quality</h3>
+                        <p>Maintain image quality while reducing size</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="gradient-text">Need Help?</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Have questions about our image resizer? We're here to help!</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">ImageResizer</h3>
+                    <p>Free online tool to resize your images instantly.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#tool">Tool</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ImageResizer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
