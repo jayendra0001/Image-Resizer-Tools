@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disclaimer for Image-Resizer-tool - Read our usage disclaimer">
+    <title>Disclaimer - Image-Resizer-tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ImageResizer</div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br><br><br>
+        <div class="container">
+            <h1>Disclaimer</h1>
+            
+            <section class="content-section">
+                <h2>Website Disclaimer</h2>
+                <p>The information provided by Image-Resizer-tool on our website is for general informational purposes only.</p>
+
+                <h3>No Warranties</h3>
+                <p>This website is provided "as is" without any representations or warranties, express or implied. Image-Resizer-tool makes no representations or warranties in relation to this website or the information and materials provided on this website.</p>
+
+                <h3>Limitations</h3>
+                <p>In no event shall Image-Resizer-tool be liable for any:</p>
+                <ul>
+                    <li>Loss or damage of any kind incurred as a result of the use of this website</li>
+                    <li>Loss or corruption of any data, database or software</li>
+                    <li>Special, indirect or consequential loss or damage</li>
+                </ul>
+
+                <h3>Professional Disclaimer</h3>
+                <p>The information on this website is provided for general informational purposes only and should not be relied upon as a substitute for professional advice.</p>
+
+                <h3>External Links</h3>
+                <p>Our website may contain links to external websites. We have no control over the content and nature of these external websites.</p>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Image-Resizer-tool</h2>
+                    <p>Image-Resizer-tool is a free online tool to enhance and resize your images instantly.</p>
+                    <p>📧 Contact: bytebrilliancetools@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="dmca.html">DMCA Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2024</span> Image-Resizer-tool. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+
+            // Mobile menu functionality
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+            });
+        </script>
+    </main>
+</body>
+</html>
